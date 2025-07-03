@@ -1,0 +1,12 @@
+services:
+  config:
+    build: .
+    container_name: config
+    ports:
+      - "8181:8181"
+    networks:
+      - dist-sys-ms-network
+
+networks:
+  dist-sys-ms-network:
+    external: true
