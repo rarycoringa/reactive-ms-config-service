@@ -1,9 +1,21 @@
 services:
-  config:
+  config1:
     build: .
-    container_name: config
+    container_name: config1
+    environment:
+      - SERVER_PORT=8888
     ports:
-      - "8181:8181"
+      - "8888:8888"
+    networks:
+      - dist-sys-ms-network
+
+  config2:
+    build: .
+    container_name: config2
+    environment:
+      - SERVER_PORT=8889
+    ports:
+      - "8889:8889"
     networks:
       - dist-sys-ms-network
 

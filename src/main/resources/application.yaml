@@ -10,14 +10,14 @@ spring:
                     default-label: main
 
 server:
-    port: 8181
+    port: ${SERVER_PORT:8888}
 
 eureka:
     client:
         fetch-registry: true
         register-with-eureka: true
         service-url:
-            defaultZone: http://discovery1:8761/eureka,http://discovery2:8762/eureka,http://discovery3:8763/eureka
+            defaultZone: http://discovery1:8761/eureka,http://discovery2:8762/eureka
     instance:
         prefer-ip-address: true
 
