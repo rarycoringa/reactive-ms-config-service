@@ -8,7 +8,7 @@ services:
     ports:
       - "8888:8888"
     networks:
-      - dist-sys-ms-network
+      - reactive-ms-network
 
   config2:
     build: .
@@ -19,8 +19,8 @@ services:
     ports:
       - "8889:8889"
     networks:
-      - dist-sys-ms-network
+      - reactive-ms-network
 
 networks:
-  dist-sys-ms-network:
+  reactive-ms-network:
     external: true

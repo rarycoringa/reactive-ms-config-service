@@ -5,7 +5,7 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/rarycoringa/dist-sys-ms-config-files.git
+                    uri: https://github.com/rarycoringa/reactive-ms-config-files.git
                     username: rarycoringa
                     password: ${GITHUB_ACCESS_TOKEN}
                     clone-on-start: true
