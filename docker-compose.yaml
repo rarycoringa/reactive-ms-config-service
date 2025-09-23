@@ -1,23 +1,12 @@
 services:
-  config1:
+  config:
     build: .
-    container_name: config1
+    container_name: config
     environment:
       - SERVER_PORT=8888
       - GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}
     ports:
       - "8888:8888"
-    networks:
-      - reactive-ms-network
-
-  config2:
-    build: .
-    container_name: config2
-    environment:
-      - SERVER_PORT=8889
-      - GITHUB_ACCESS_TOKEN=${GITHUB_ACCESS_TOKEN}
-    ports:
-      - "8889:8889"
     networks:
       - reactive-ms-network
 
